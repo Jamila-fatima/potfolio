@@ -1,0 +1,149 @@
+body{
+    margin: 0%;
+}
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(124, 11, 11);
+    height: auto;
+    padding: 20px 10px; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+#navbar a{
+    text-decoration: none;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+main{
+    position: relative;
+    z-index: 999;
+    top: 0;
+}
+#welcome-section{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+#welcome-section p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(218, 122, 122);
+    margin-top: 0px;
+}
+#projects{
+    height: auto;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 80px;
+}
+#projects h2{
+    padding-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    border-bottom: 2px solid;
+}
+#projects a{
+    text-decoration: none;
+    color: rgb(143, 21, 5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+#projects a img{
+    width: 320px;
+    height: auto;
+}
+.projects-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-images{
+    background-color: rgba(212, 245, 245, 0.315);
+    text-align: center;
+    padding: 30px 20px;
+    margin: 10px;
+}
+#contact{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 40px;
+}
+#contact h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+#contact p{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+}
+@media only screen and (max-width:800px){
+    #navbar a{
+        font-size: 20px;
+    }
+    #projects{
+        padding: 10px 30px;
+    }
+    #projects h2{
+        font-size: 25px;
+    }
+    #projects a img{
+        width: 220px;
+        height: auto;
+    }
+    #contact h2{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:400px){
+    #navbar a{
+        font-size: 20px;
+    }
+    #projects{
+        padding: 10px 30px;
+    }
+    #projects h2{
+        font-size: 20px;
+    }
+    #projects a img{
+        width: 220px;
+        height: auto;
+    }
+    #contact h2{
+        font-size: 25px;
+    }
+}
